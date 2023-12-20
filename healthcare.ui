@@ -73,7 +73,7 @@ color: rgb(148, 23, 81);
         <x>460</x>
         <y>240</y>
         <width>71</width>
-        <height>21</height>
+        <height>31</height>
        </rect>
       </property>
       <property name="font">
@@ -112,7 +112,7 @@ font: italic 24pt &quot;Arial&quot;;</string>
         <x>420</x>
         <y>350</y>
         <width>121</width>
-        <height>21</height>
+        <height>31</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -128,7 +128,7 @@ font: italic 24pt &quot;Arial&quot;;</string>
        <rect>
         <x>550</x>
         <y>340</y>
-        <width>401</width>
+        <width>391</width>
         <height>41</height>
        </rect>
       </property>
@@ -200,9 +200,9 @@ font: italic 24pt &quot;Arial&quot;;</string>
       <property name="geometry">
        <rect>
         <x>850</x>
-        <y>640</y>
+        <y>635</y>
         <width>111</width>
-        <height>26</height>
+        <height>31</height>
        </rect>
       </property>
       <property name="styleSheet">
