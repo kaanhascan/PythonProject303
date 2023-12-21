@@ -9,6 +9,10 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from common_utils import extended_button_clicked
+
+
+
 
 
 class Ui_MainWindow(object):
@@ -74,7 +78,7 @@ class Ui_MainWindow(object):
         self.age_input.setGeometry(QtCore.QRect(540, 530, 401, 41))
         self.age_input.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.age_input.setObjectName("age_input")
-        self.push_button = QtWidgets.QPushButton(self.homepage)
+        self.push_button = extended_button_clicked(self.homepage)
         self.push_button.setGeometry(QtCore.QRect(810, 630, 131, 31))
         self.push_button.setStyleSheet("background-color: rgb(0, 249, 0);\n"
 "font: 57 24pt \"Avenir\";")
@@ -91,6 +95,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        self.push_button.set_main_window(MainWindow)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
