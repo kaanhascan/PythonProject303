@@ -17,17 +17,17 @@
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>-10</x>
+      <x>0</x>
       <y>0</y>
-      <width>1451</width>
-      <height>901</height>
+      <width>1491</width>
+      <height>951</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 253, 255);</string>
+     <string notr="true">background-color: rgb(0, 150, 255);</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="homepage">
      <property name="styleSheet">
@@ -57,7 +57,7 @@ color: rgb(148, 23, 81);
      <widget class="QLabel" name="name">
       <property name="geometry">
        <rect>
-        <x>430</x>
+        <x>450</x>
         <y>290</y>
         <width>101</width>
         <height>31</height>
@@ -96,7 +96,7 @@ font: italic 24pt &quot;Arial&quot;;</string>
      <widget class="QLabel" name="surname">
       <property name="geometry">
        <rect>
-        <x>360</x>
+        <x>400</x>
         <y>370</y>
         <width>161</width>
         <height>31</height>
@@ -201,7 +201,450 @@ font: 57 24pt &quot;Avenir&quot;;</string>
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="symptoms"/>
+    <widget class="QWidget" name="symptoms">
+     <widget class="QCheckBox" name="checkBox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>70</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 24pt &quot;Avenir&quot;;
+background-color: rgb(235, 235, 235);</string>
+      </property>
+      <property name="text">
+       <string>HEADACHE</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>70</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>STOMACH ACHE</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_3">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>70</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>NAUSESA</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_4">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>70</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>DIZZINESS</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_5">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>70</y>
+        <width>150</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>JOINT PAIN</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_6">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>70</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>EYE REDNESS</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_7">
+      <property name="geometry">
+       <rect>
+        <x>1150</x>
+        <y>70</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>BURN</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_8">
+      <property name="geometry">
+       <rect>
+        <x>1270</x>
+        <y>70</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>EARACHE</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_9">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>230</y>
+        <width>281</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>BLURRY ON THE BODY</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_10">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>230</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>CUT</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_11">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>230</y>
+        <width>170</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>TOOTH PAIN</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_12">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>230</y>
+        <width>150</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>HAIR LOSS</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_13">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>230</y>
+        <width>190</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>SKIN REDNESS</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_14">
+      <property name="geometry">
+       <rect>
+        <x>1040</x>
+        <y>230</y>
+        <width>300</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>SHORTNESS OF BREATH</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_15">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>380</y>
+        <width>170</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>NOSE FLOW</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_16">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>380</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>FEVER</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_17">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>380</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>COUGH</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_18">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>380</y>
+        <width>150</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>VOMITING</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_19">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>380</y>
+        <width>180</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>SORETHROAT</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_20">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>380</y>
+        <width>150</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>INSOMNIA</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_21">
+      <property name="geometry">
+       <rect>
+        <x>1080</x>
+        <y>380</y>
+        <width>90</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>ACNE</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_22">
+      <property name="geometry">
+       <rect>
+        <x>1200</x>
+        <y>380</y>
+        <width>170</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>NOSE BLEED</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_23">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>510</y>
+        <width>140</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>DIARRHEA</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_24">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>510</y>
+        <width>190</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>COSTIVENESS</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_25">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>510</y>
+        <width>130</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(235, 235, 235);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>PHLEGM</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>700</y>
+        <width>130</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 249, 0);
+font: 24pt &quot;Avenir&quot;;</string>
+      </property>
+      <property name="text">
+       <string>SUGGEST</string>
+      </property>
+     </widget>
+    </widget>
     <widget class="QWidget" name="suggestions"/>
    </widget>
   </widget>
