@@ -47,42 +47,51 @@ class Ui_MainWindow(object):
         self.name.setStyleSheet("font: 24pt \".AppleSystemUIFont\";\n"
 "font: italic 24pt \"Arial\";")
         self.name.setObjectName("name")
+
         self.name_input = QtWidgets.QLineEdit(self.homepage)
         self.name_input.setGeometry(QtCore.QRect(540, 280, 401, 41))
         self.name_input.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.name_input.setObjectName("name_input")
+
         self.surname = QtWidgets.QLabel(self.homepage)
         self.surname.setGeometry(QtCore.QRect(360, 370, 161, 31))
         self.surname.setStyleSheet("\n"
 "font: italic 24pt \"Arial\";")
         self.surname.setObjectName("surname")
+
         self.surname_input = QtWidgets.QLineEdit(self.homepage)
         self.surname_input.setGeometry(QtCore.QRect(540, 360, 401, 41))
         self.surname_input.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.surname_input.setObjectName("surname_input")
+
         self.TC = QtWidgets.QLabel(self.homepage)
         self.TC.setGeometry(QtCore.QRect(470, 450, 61, 31))
         self.TC.setStyleSheet("\n"
 "font: italic 24pt \"Arial\";")
         self.TC.setObjectName("TC")
+
         self.TC_input = QtWidgets.QLineEdit(self.homepage)
         self.TC_input.setGeometry(QtCore.QRect(540, 440, 401, 41))
         self.TC_input.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.TC_input.setObjectName("TC_input")
+
         self.age = QtWidgets.QLabel(self.homepage)
         self.age.setGeometry(QtCore.QRect(450, 540, 71, 31))
         self.age.setStyleSheet("\n"
 "font: italic 24pt \"Arial\";")
         self.age.setObjectName("age")
+
         self.age_input = QtWidgets.QLineEdit(self.homepage)
         self.age_input.setGeometry(QtCore.QRect(540, 530, 401, 41))
         self.age_input.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.age_input.setObjectName("age_input")
+
         self.push_button = extended_button_clicked(self.homepage)
         self.push_button.setGeometry(QtCore.QRect(810, 630, 131, 31))
         self.push_button.setStyleSheet("background-color: rgb(0, 249, 0);\n"
 "font: 57 24pt \"Avenir\";")
         self.push_button.setObjectName("push_button")
+
         self.stackedWidget.addWidget(self.homepage)
         self.symptoms = QtWidgets.QWidget()
         self.symptoms.setObjectName("symptoms")
