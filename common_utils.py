@@ -3,7 +3,7 @@ import csv
 
 
 class CombinedButtonClicked(QtWidgets.QPushButton):
-    column_names = ['TC', 'Name', 'Surname', 'Age']
+    column_names = ['Name','Surname','TC','Age']
 
 
 
