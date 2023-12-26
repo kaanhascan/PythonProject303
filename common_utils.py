@@ -1,16 +1,17 @@
+import os
+
 from PyQt5 import QtWidgets, QtCore, QtGui
 import csv
 
 
 class CombinedButtonClicked(QtWidgets.QPushButton):
-    column_names = ['Name','Surname','TC','Age']
-
-
+    column_names = ['Name', 'Surname', 'TC', 'Age']
 
     def set_columns(self):
-        with open('records.csv', mode='a', newline='') as file:
-            writer = csv.DictWriter(file, fieldnames=self.column_names)
-            writer.writeheader()
+        if not os.path.exists('records.csv'):
+            with open('records.csv', mode='a', newline='') as file:
+                writer = csv.DictWriter(file, fieldnames=self.column_names)
+                writer.writeheader()
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -33,13 +34,6 @@ class CombinedButtonClicked(QtWidgets.QPushButton):
 
             writer.writerow([name, surname, tc, age])
 
-        self.clear_inputs()
         self.set_columns()
-
         self.main_window.stackedWidget.setCurrentIndex(1)
 
-    def clear_inputs(self):
-        self.TC_input.clear()
-        self.name_input.clear()
-        self.surname_input.clear()
-        self.age_input.clear()

@@ -11,7 +11,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -28,8 +27,8 @@ class Ui_MainWindow(object):
         self.health_care = QtWidgets.QLabel(self.homepage)
         self.health_care.setGeometry(QtCore.QRect(470, 50, 471, 81))
         self.health_care.setStyleSheet("font: 48pt \"Cochin\";\n"
-"color: rgb(148, 23, 81);\n"
-"")
+                                       "color: rgb(148, 23, 81);\n"
+                                       "")
         self.health_care.setAlignment(QtCore.Qt.AlignCenter)
         self.health_care.setObjectName("health_care")
         self.name = QtWidgets.QLabel(self.homepage)
@@ -42,7 +41,7 @@ class Ui_MainWindow(object):
         font.setWeight(50)
         self.name.setFont(font)
         self.name.setStyleSheet("font: 24pt \".AppleSystemUIFont\";\n"
-"font: italic 24pt \"Arial\";")
+                                "font: italic 24pt \"Arial\";")
         self.name.setObjectName("name")
         self.name_input = QtWidgets.QLineEdit(self.homepage)
         self.name_input.setGeometry(QtCore.QRect(540, 280, 401, 41))
@@ -51,7 +50,7 @@ class Ui_MainWindow(object):
         self.surname = QtWidgets.QLabel(self.homepage)
         self.surname.setGeometry(QtCore.QRect(370, 370, 161, 31))
         self.surname.setStyleSheet("\n"
-"font: italic 24pt \"Arial\";")
+                                   "font: italic 24pt \"Arial\";")
         self.surname.setObjectName("surname")
         self.surname_input = QtWidgets.QLineEdit(self.homepage)
         self.surname_input.setGeometry(QtCore.QRect(540, 360, 401, 41))
@@ -60,7 +59,7 @@ class Ui_MainWindow(object):
         self.TC = QtWidgets.QLabel(self.homepage)
         self.TC.setGeometry(QtCore.QRect(470, 450, 61, 31))
         self.TC.setStyleSheet("\n"
-"font: italic 24pt \"Arial\";")
+                              "font: italic 24pt \"Arial\";")
         self.TC.setObjectName("TC")
         self.TC_input = QtWidgets.QLineEdit(self.homepage)
         self.TC_input.setGeometry(QtCore.QRect(540, 440, 401, 41))
@@ -69,20 +68,21 @@ class Ui_MainWindow(object):
         self.age = QtWidgets.QLabel(self.homepage)
         self.age.setGeometry(QtCore.QRect(450, 540, 71, 31))
         self.age.setStyleSheet("\n"
-"font: italic 24pt \"Arial\";")
+                               "font: italic 24pt \"Arial\";")
         self.age.setObjectName("age")
         self.age_input = QtWidgets.QLineEdit(self.homepage)
         self.age_input.setGeometry(QtCore.QRect(540, 530, 401, 41))
         self.age_input.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.age_input.setObjectName("age_input")
+        from common_utils import CombinedButtonClicked
 
-        self.push_button = QtWidgets.QPushButton(self.centralwidget)
+        self.push_button = CombinedButtonClicked(self.centralwidget)
         self.push_button.setGeometry(QtCore.QRect(810, 630, 131, 31))
         self.push_button.setStyleSheet("background-color: rgb(0, 249, 0);\n"
-"font: 57 24pt \"Avenir\";")
+                                       "font: 57 24pt \"Avenir\";")
         self.push_button.setObjectName("push_button")
+        self.push_button.hide()
 
-        from common_utils import CombinedButtonClicked
         combined_button_clicked = CombinedButtonClicked(self.centralwidget)
         combined_button_clicked.setGeometry(QtCore.QRect(810, 630, 131, 31))
         combined_button_clicked.set_main_window(self)
@@ -94,132 +94,132 @@ class Ui_MainWindow(object):
         self.Headache = QtWidgets.QCheckBox(self.symptoms)
         self.Headache.setGeometry(QtCore.QRect(30, 70, 181, 31))
         self.Headache.setStyleSheet("font: 24pt \"Avenir\";\n"
-"background-color: rgb(235, 235, 235);")
+                                    "background-color: rgb(235, 235, 235);")
         self.Headache.setObjectName("Headache")
         self.Stomach_Ache = QtWidgets.QCheckBox(self.symptoms)
         self.Stomach_Ache.setGeometry(QtCore.QRect(230, 70, 251, 31))
         self.Stomach_Ache.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                        "font: 24pt \"Avenir\";")
         self.Stomach_Ache.setObjectName("Stomach_Ache")
         self.Nausea = QtWidgets.QCheckBox(self.symptoms)
         self.Nausea.setGeometry(QtCore.QRect(490, 70, 151, 31))
         self.Nausea.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                  "font: 24pt \"Avenir\";")
         self.Nausea.setObjectName("Nausea")
         self.Dizziness = QtWidgets.QCheckBox(self.symptoms)
         self.Dizziness.setGeometry(QtCore.QRect(650, 70, 181, 31))
         self.Dizziness.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                     "font: 24pt \"Avenir\";")
         self.Dizziness.setObjectName("Dizziness")
         self.Joint_Pain = QtWidgets.QCheckBox(self.symptoms)
         self.Joint_Pain.setGeometry(QtCore.QRect(840, 70, 191, 31))
         self.Joint_Pain.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                      "font: 24pt \"Avenir\";")
         self.Joint_Pain.setObjectName("Joint_Pain")
         self.Eye_Redness = QtWidgets.QCheckBox(self.symptoms)
         self.Eye_Redness.setGeometry(QtCore.QRect(1040, 70, 221, 31))
         self.Eye_Redness.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                       "font: 24pt \"Avenir\";")
         self.Eye_Redness.setObjectName("Eye_Redness")
         self.Burn = QtWidgets.QCheckBox(self.symptoms)
         self.Burn.setGeometry(QtCore.QRect(1270, 70, 101, 31))
         self.Burn.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                "font: 24pt \"Avenir\";")
         self.Burn.setObjectName("Burn")
         self.Ear_Ache = QtWidgets.QCheckBox(self.symptoms)
         self.Ear_Ache.setGeometry(QtCore.QRect(1380, 70, 151, 31))
         self.Ear_Ache.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                    "font: 24pt \"Avenir\";")
         self.Ear_Ache.setObjectName("Ear_Ache")
         self.Bruise_on_Body = QtWidgets.QCheckBox(self.symptoms)
         self.Bruise_on_Body.setGeometry(QtCore.QRect(30, 230, 351, 30))
         self.Bruise_on_Body.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                          "font: 24pt \"Avenir\";")
         self.Bruise_on_Body.setObjectName("Bruise_on_Body")
         self.Cut = QtWidgets.QCheckBox(self.symptoms)
         self.Cut.setGeometry(QtCore.QRect(390, 230, 81, 31))
         self.Cut.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                               "font: 24pt \"Avenir\";")
         self.Cut.setObjectName("Cut")
         self.ToothPain = QtWidgets.QCheckBox(self.symptoms)
         self.ToothPain.setGeometry(QtCore.QRect(480, 230, 211, 30))
         self.ToothPain.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                     "font: 24pt \"Avenir\";")
         self.ToothPain.setObjectName("ToothPain")
         self.HairLoss = QtWidgets.QCheckBox(self.symptoms)
         self.HairLoss.setGeometry(QtCore.QRect(700, 230, 181, 30))
         self.HairLoss.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                    "font: 24pt \"Avenir\";")
         self.HairLoss.setObjectName("HairLoss")
         self.SkinRedness = QtWidgets.QCheckBox(self.symptoms)
         self.SkinRedness.setGeometry(QtCore.QRect(900, 230, 241, 30))
         self.SkinRedness.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                       "font: 24pt \"Avenir\";")
         self.SkinRedness.setObjectName("SkinRedness")
         self.Breath_Shortness = QtWidgets.QCheckBox(self.symptoms)
         self.Breath_Shortness.setGeometry(QtCore.QRect(1160, 230, 371, 30))
         self.Breath_Shortness.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                            "font: 24pt \"Avenir\";")
         self.Breath_Shortness.setObjectName("Breath_Shortness")
         self.Nose_Flow = QtWidgets.QCheckBox(self.symptoms)
         self.Nose_Flow.setGeometry(QtCore.QRect(30, 380, 201, 30))
         self.Nose_Flow.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                     "font: 24pt \"Avenir\";")
         self.Nose_Flow.setObjectName("Nose_Flow")
         self.Fever = QtWidgets.QCheckBox(self.symptoms)
         self.Fever.setGeometry(QtCore.QRect(240, 380, 111, 30))
         self.Fever.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                 "font: 24pt \"Avenir\";")
         self.Fever.setObjectName("Fever")
         self.Cough = QtWidgets.QCheckBox(self.symptoms)
         self.Cough.setGeometry(QtCore.QRect(360, 380, 131, 30))
         self.Cough.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                 "font: 24pt \"Avenir\";")
         self.Cough.setObjectName("Cough")
         self.Vomiting = QtWidgets.QCheckBox(self.symptoms)
         self.Vomiting.setGeometry(QtCore.QRect(510, 380, 171, 30))
         self.Vomiting.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                    "font: 24pt \"Avenir\";")
         self.Vomiting.setObjectName("Vomiting")
         self.Sore_Throat = QtWidgets.QCheckBox(self.symptoms)
         self.Sore_Throat.setGeometry(QtCore.QRect(690, 380, 221, 30))
         self.Sore_Throat.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                       "font: 24pt \"Avenir\";")
         self.Sore_Throat.setObjectName("Sore_Throat")
         self.Insomnia = QtWidgets.QCheckBox(self.symptoms)
         self.Insomnia.setGeometry(QtCore.QRect(930, 380, 171, 30))
         self.Insomnia.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                    "font: 24pt \"Avenir\";")
         self.Insomnia.setObjectName("Insomnia")
         self.Acne = QtWidgets.QCheckBox(self.symptoms)
         self.Acne.setGeometry(QtCore.QRect(1130, 380, 101, 30))
         self.Acne.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                "font: 24pt \"Avenir\";")
         self.Acne.setObjectName("Acne")
         self.Nose_Bleed = QtWidgets.QCheckBox(self.symptoms)
         self.Nose_Bleed.setGeometry(QtCore.QRect(1270, 380, 201, 30))
         self.Nose_Bleed.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                      "font: 24pt \"Avenir\";")
         self.Nose_Bleed.setObjectName("Nose_Bleed")
         self.Diarrhea = QtWidgets.QCheckBox(self.symptoms)
         self.Diarrhea.setGeometry(QtCore.QRect(430, 510, 171, 30))
         self.Diarrhea.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                    "font: 24pt \"Avenir\";")
         self.Diarrhea.setObjectName("Diarrhea")
         self.Costiveness = QtWidgets.QCheckBox(self.symptoms)
         self.Costiveness.setGeometry(QtCore.QRect(610, 510, 221, 30))
         self.Costiveness.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                       "font: 24pt \"Avenir\";")
         self.Costiveness.setObjectName("Costiveness")
         self.Phlegm = QtWidgets.QCheckBox(self.symptoms)
         self.Phlegm.setGeometry(QtCore.QRect(850, 510, 141, 30))
         self.Phlegm.setStyleSheet("background-color: rgb(235, 235, 235);\n"
-"font: 24pt \"Avenir\";")
+                                  "font: 24pt \"Avenir\";")
         self.Phlegm.setObjectName("Phlegm")
         self.suggest_button = QtWidgets.QPushButton(self.symptoms)
         self.suggest_button.setGeometry(QtCore.QRect(660, 700, 130, 26))
         self.suggest_button.setStyleSheet("background-color: rgb(0, 249, 0);\n"
-"font: 24pt \"Avenir\";")
+                                          "font: 24pt \"Avenir\";")
         self.suggest_button.setObjectName("suggest_button")
         self.stackedWidget.addWidget(self.symptoms)
         self.suggestions = QtWidgets.QWidget()
@@ -270,6 +270,7 @@ class Ui_MainWindow(object):
 
 if __name__ == "__main__":
     import sys
+
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
