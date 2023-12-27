@@ -221,6 +221,7 @@ class Ui_MainWindow(object):
         self.suggest_button.setStyleSheet("background-color: rgb(0, 249, 0);\n"
                                           "font: 24pt \"Avenir\";")
         self.suggest_button.setObjectName("suggest_button")
+        self.suggest_button.clicked.connect(self.show_suggestion)
         self.stackedWidget.addWidget(self.symptoms)
         self.suggestions = QtWidgets.QWidget()
         self.suggestions.setObjectName("suggestions")
@@ -266,6 +267,20 @@ class Ui_MainWindow(object):
         self.Costiveness.setText(_translate("MainWindow", "COSTIVENESS"))
         self.Phlegm.setText(_translate("MainWindow", "PHLEGM"))
         self.suggest_button.setText(_translate("MainWindow", "SUGGEST"))
+
+    def show_suggestion(self):
+    # Suggestion sayfasını oluştur
+        self.stackedWidget.setCurrentIndex(2)  # Örnek olarak 2. sayfa indeksi
+
+    # Baş ağrısı (Headache) seçili ise, suggestion_label'da "Drink more water" göster
+        if self.Headache.isChecked():
+            suggestion_label = QtWidgets.QLabel(self.suggestions)
+            suggestion_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
+            suggestion_label.setText("Drink more water")
+            suggestion_label.setStyleSheet("font-size: 24pt; color: black;")
+            suggestion_label.setAlignment(QtCore.Qt.AlignCenter)
+            suggestion_label.setObjectName("suggestion_label")
+        self.stackedWidget.addWidget(suggestion_label)
 
 
 if __name__ == "__main__":
