@@ -37,3 +37,4 @@ class CombinedButtonClicked(QtWidgets.QPushButton):
         self.set_columns()
         self.main_window.stackedWidget.setCurrentIndex(1)
 
+
