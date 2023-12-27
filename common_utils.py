@@ -1,17 +1,15 @@
 import os
 
 from PyQt5 import QtWidgets, QtCore, QtGui
+from healthcare import Ui_MainWindow
 import csv
+
+from PyQt5.QtCore import pyqtSignal
 
 
 class CombinedButtonClicked(QtWidgets.QPushButton):
-    column_names = ['Name', 'Surname', 'TC', 'Age']
+    column_names = ['Name', 'Surname', 'TC', 'Age', 'Symptoms']
 
-    def set_columns(self):
-        if not os.path.exists('records.csv'):
-            with open('records.csv', mode='a', newline='') as file:
-                writer = csv.DictWriter(file, fieldnames=self.column_names)
-                writer.writeheader()
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -28,13 +26,61 @@ class CombinedButtonClicked(QtWidgets.QPushButton):
         surname = self.main_window.surname_input.text()
         tc = self.main_window.TC_input.text()
         age = self.main_window.age_input.text()
+        symptoms = self.get_selected_symptoms()
 
         with open('records.csv', mode='a', newline='') as file:
             writer = csv.writer(file)
 
-            writer.writerow([name, surname, tc, age])
+            row = [name, surname, tc, age] + symptoms
 
-        self.set_columns()
+            writer.writerow(row)
+
         self.main_window.stackedWidget.setCurrentIndex(1)
+        self.hide()
 
+    def get_selected_symptoms(self):
 
+        checked_boxes = []
+
+        checkboxes = [
+            self.main_window.Headache, self.main_window.Stomach_Ache,
+            self.main_window.Nausea, self.main_window.Dizziness,
+            self.main_window.Joint_Pain, self.main_window.Eye_Redness,
+            self.main_window.Burn, self.main_window.Ear_Ache,
+            self.main_window.Bruise_on_Body, self.main_window.Cut,
+            self.main_window.ToothPain, self.main_window.HairLoss,
+            self.main_window.SkinRedness, self.main_window.Breath_Shortness,
+            self.main_window.Nose_Flow, self.main_window.Fever,
+            self.main_window.Cough, self.main_window.Vomiting,
+            self.main_window.Sore_Throat, self.main_window.Insomnia,
+            self.main_window.Acne, self.main_window.Nose_Bleed,
+            self.main_window.Diarrhea, self.main_window.Costiveness,
+            self.main_window.Phlegm,
+        ]
+
+        for checkbox in checkboxes:
+            if checkbox.isChecked():
+                checked_boxes.append(checkbox.objectName())
+
+        return checked_boxes
+
+    def display_suggestions(self):
+
+        checked_boxes = self.get_selected_symptoms()
+
+        suggestions_texts = {
+            'Headache': "Drink some water"
+        }
+
+        for i in reversed(range(self.suggestions.layout.count())):
+            remove = self.suggestions.layout.itemAt(i).widget()
+            self.suggestions_layout.removeWidget(remove)
+            remove.setParent(None)
+
+        for symptoms in checked_boxes:
+            suggestion_label = QtWidgets.QLabel(self.main_window.suggestions)
+            suggestion_label.setText(
+                f"Based on your {symptoms} we have some suggestions for you \n {suggestions_texts[symptoms]}")
+            self.main_window.suggestions_layout.addWidget(suggestion_label)
+
+        self.main_window.stackedWidget.setCurrentIndex(2)
