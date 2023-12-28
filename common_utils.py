@@ -1,4 +1,4 @@
-import os
+
 
 from PyQt5 import QtWidgets, QtCore, QtGui
 from healthcare import Ui_MainWindow
@@ -84,3 +84,5 @@ class CombinedButtonClicked(QtWidgets.QPushButton):
             self.main_window.suggestions_layout.addWidget(suggestion_label)
 
         self.main_window.stackedWidget.setCurrentIndex(2)
+
+

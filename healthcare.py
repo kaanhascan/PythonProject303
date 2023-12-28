@@ -248,6 +248,7 @@ class Ui_MainWindow(object):
         self.suggest_button.setStyleSheet("background-color: rgb(0, 249, 0);\n"
                                           "font: 24pt \"Avenir\";")
         self.suggest_button.setObjectName("suggest_button")
+        self.suggest_button.clicked.connect(self.show_suggestion)
 
 
 
@@ -261,9 +262,9 @@ class Ui_MainWindow(object):
         self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.label = QtWidgets.QLabel(self.verticalLayoutWidget)
-        self.label.setObjectName("label")
-        self.verticalLayout.addWidget(self.label)
+        self.Headache_label = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.Headache_label.setObjectName("Headache_label")
+        self.verticalLayout.addWidget(self.Headache_label)
         self.label_2 = QtWidgets.QLabel(self.verticalLayoutWidget)
         self.label_2.setObjectName("label_2")
         self.verticalLayout.addWidget(self.label_2)
@@ -378,7 +379,7 @@ class Ui_MainWindow(object):
         self.Costiveness.setText(_translate("MainWindow", "COSTIVENESS"))
         self.Phlegm.setText(_translate("MainWindow", "PHLEGM"))
         self.suggest_button.setText(_translate("MainWindow", "SUGGEST"))
-        self.label.setText(_translate("MainWindow", "TextLabel"))
+        self.Headache_label.setText(_translate("MainWindow", "TextLabel"))
         self.label_2.setText(_translate("MainWindow", "TextLabel"))
         self.label_4.setText(_translate("MainWindow", "TextLabel"))
         self.label_5.setText(_translate("MainWindow", "TextLabel"))
@@ -403,6 +404,22 @@ class Ui_MainWindow(object):
         self.label_11.setText(_translate("MainWindow", "TextLabel"))
         self.label_7.setText(_translate("MainWindow", "TextLabel"))
         self.label_3.setText(_translate("MainWindow", "TextLabel"))
+
+    def show_suggestion(self):
+        # Suggestion sayfasını oluştur
+        self.stackedWidget.setCurrentIndex(2)  # Örnek olarak 2. sayfa indeksi
+
+        # Baş ağrısı (Headache) seçili ise, suggestion_label'da "Drink more water" göster
+        if self.Headache.isChecked():
+            self.Headache_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
+            self.Headache_label.setText("Drink more water")
+            self.Headache_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Headache_label.setAlignment(QtCore.Qt.AlignCenter)
+            self.Headache_label.setObjectName("Headache_label")
+            self.Headache_label.show()
+        else:
+            self.Headache_label.hide()
+
 
 
 
