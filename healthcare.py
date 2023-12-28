@@ -413,7 +413,7 @@ class Ui_MainWindow(object):
         if self.Headache.isChecked():
             self.Headache_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Headache_label.setText("Based on your Headache symptom\nWe have some suggestions for you\nDrinking plenty of water. \n Drinking soothing herbal teas such as chamomile, turmeric and ginger.\n Drinking small amounts of coffee or caffeinated tea.\n")
-            self.Headache_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Headache_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Headache_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Headache_label.setObjectName("Headache")
             self.Headache_label.show()
@@ -423,7 +423,7 @@ class Ui_MainWindow(object):
         if self.Stomach_Ache.isChecked():
             self.Stomach_Ache_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Stomach_Ache_label.setText("Based on your Stomachache symptom \nWe have some suggestions for you\n drinking slightly ice water.\n drinking apple juice.\n It is recommended to eat bananas.")
-            self.Stomach_Ache_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Stomach_Ache_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Stomach_Ache_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Stomach_Ache_label.setObjectName("Stomach_Ache_label")
             self.Stomach_Ache_label.show()
@@ -433,7 +433,7 @@ class Ui_MainWindow(object):
         if self.Nausea.isChecked():
             self.Nausea_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Nausea_label.setText("Based on your Nausea symptom \nWe have some suggestions for you\n White rice is an easy-to-digest and light source of carbohydrates. It soothes the stomach and reduces the feeling of nausea.\n Boiled and lean chicken or turkey is a light source of protein and can be digested without tiring the stomach.\n Ginger is an herb that is effective in relieving nausea. You can prepare ginger tea by adding fresh ginger slices to boiling water or using ready-made ginger tea.")
-            self.Nausea_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Nausea_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Nausea_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Nausea_label.setObjectName("Nausea_label")
             self.Nausea_label.show()
@@ -441,11 +441,11 @@ class Ui_MainWindow(object):
             self.Nausea_label.hide()
 
         if self.Dizziness.isChecked():
-            self.Dizziness_label_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
+            self.Dizziness_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Dizziness_label.setText("Based on your Dizziness symptom. \nWe have some suggestions for you.\n Consuming apple cider vinegar and honey. \n consuming plenty of water. \n Drinking lemon juice with sugar.")
-            self.Dizziness_label_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Dizziness_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Dizziness_label.setAlignment(QtCore.Qt.AlignCenter)
-            self.Dizziness_label_label.setObjectName("Dizziness_label")
+            self.Dizziness_label.setObjectName("Dizziness_label")
             self.Dizziness_label.show()
         else:
             self.Dizziness_label.hide()
@@ -453,17 +453,17 @@ class Ui_MainWindow(object):
         if self.Joint_Pain.isChecked():
             self.Joint_Pain_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Joint_Pain_label.setText("Based on your Joint Pain symptom. \nWe have some suggestions for you.\nHot-cold compress.\n Rest.\nWater and light stretching exercises.")
-            self.Joint_Pain_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Joint_Pain_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Joint_Pain_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Joint_Pain_label.setObjectName("Joint_Pain_label")
-            self.Join_Pain_label.show()
+            self.Joint_Pain_label.show()
         else:
             self.Joint_Pain_label.hide()
 
         if self.Eye_Redness.isChecked():
             self.Eye_Redness_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Eye_Redness_label.setText("Based on your Eye redness symptom \nWe have some suggestions for you\nCold Compress: Cold compresses applied to the eyes several times a day can help reduce symptoms such as redness and swelling.\n Paying Attention to Hand Cleanliness: Rubbing the eyes with unclean hands can cause redness.\n Using Sunglasses: Exposure to sunlight with the naked eye is one of the factors that cause redness.")
-            self.Eye_Redness_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Eye_Redness_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Eye_Redness_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Eye_Redness_label.setObjectName("Eye_Redness_label")
             self.Eye_Redness_label.show()
@@ -473,7 +473,7 @@ class Ui_MainWindow(object):
         if self.Burn.isChecked():
             self.Burn_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Burn_label.setText("Based on your Burn symptom \nWe have some suggestions for you\nKeeping the burned area under cold water or applying a cold compress.\nApplying aloe vera cream or gel to keep skin moisturized.\nReducing the risk of infection by applying antibiotic ointment.\nUsing burn cream.")
-            self.Burn_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Burn_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Burn_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Burn_label.setObjectName("Burn_label")
             self.Burn_label.show()
@@ -483,7 +483,7 @@ class Ui_MainWindow(object):
         if self.Ear_Ache.isChecked():
             self.Ear_Ache_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Ear_Ache_label.setText("Based on your Earache symptom \nWe have some suggestions for you\nPut a heated towel on your ear, make sure that the towel is not so hot that it burns your ear.\nUse painkillers.\nDuring this period, avoid heavy activities and rest.")
-            self.Ear_Ache_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Ear_Ache_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Ear_Ache_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Ear_Ache_label.setObjectName("Ear_Ache_label")
             self.Ear_Ache_label.show()
@@ -495,7 +495,7 @@ class Ui_MainWindow(object):
         if self.Bruise_on_Body.isChecked():
             self.Bruise_on_Body_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Bruise_on_Body_label.setText("Based on your Bruise on body symptom \nWe have some suggestions for you\n apply ice pressure to the bruised area \n Chop an onion and leave it on your bruised area.\nConsume foods containing vitamin C")
-            self.Bruise_on_Body_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Bruise_on_Body_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Bruise_on_Body_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Bruise_on_Body_label.setObjectName("Bruise_on_Body_label")
             self.Bruise_on_Body_label.show()
@@ -507,7 +507,7 @@ class Ui_MainWindow(object):
         if self.Cut.isChecked():
             self.Cut_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Cut_label.setText("Based on your Cut \nWe have some suggestions for you\nAloe vera: Thanks to its anti-inflammatory properties, aloe vera is excellent for soothing open wounds. \n Honey helps kill bacteria and heal wounds faster. Apply a thin layer of honey to the injured area and cover it with a clean bandage.\n Especially if you have a lot of cuts and scratches on your body, apple cider vinegar can be a great option to eliminate the infection.")
-            self.Cut_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Cut_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Cut_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Cut_label.setObjectName("Cut_label")
             self.Cut_label.show()
@@ -519,7 +519,7 @@ class Ui_MainWindow(object):
         if self.ToothPain.isChecked():
             self.ToothPain_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.ToothPain_label.setText("Based on your Tooth Pain symptom \nWe have some suggestions for you\n Gargling mouth with salt water or hydrogen peroxide.\n Applying clove oil, vanilla extract or garlic paste to the aching tooth.\n Applying ice compress for toothache.")
-            self.ToothPain_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.ToothPain_label.setStyleSheet("font-size: 18pt; color: black;")
             self.ToothPain_label.setAlignment(QtCore.Qt.AlignCenter)
             self.ToothPain_label.setObjectName("TootPain_label")
             self.ToothPain_label.show()
@@ -532,7 +532,7 @@ class Ui_MainWindow(object):
             self.HairLoss_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.HairLoss_label.setText("Based on your Hair Loss symptom \nWe have some suggestions for you\n The nutrition of hair follicles occurs with nutrients carried to the cells through circulation. Therefore, it is very important to get enough vitamins A, B, C, D and E through a balanced diet.\n For a strong hair profile, it is recommended to avoid washing with hot water. Washing with warm water is supportive in preventing excessive hair loss as it does not damage the sebum layer on the scalp.\n Controlling stress and anxiety through relaxing sports activities such as yoga and meditation can prevent excessive hair loss.")
             self.HairLoss_label.setAlignment(QtCore.Qt.AlignCenter)
-            self.HairLoss_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.HairLoss_label.setStyleSheet("font-size: 18pt; color: black;")
             self.HairLoss_label.setObjectName("HairLoss_label")
             self.HairLoss_label.show()
         else:
@@ -544,7 +544,7 @@ class Ui_MainWindow(object):
             self.SkinRedness_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.SkinRedness_label.setText("Based on your Skin Redness symptom \nWe have some suggestions for you\n If you are wondering what to do for facial redness, aloe vera gel is one of the most effective herbal treatments for redness.\n Coconut oil has a natural soothing effect for facial redness.")
             self.SkinRedness_label.setAlignment(QtCore.Qt.AlignCenter)
-            self.SkinRedness_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.SkinRedness_label.setStyleSheet("font-size: 18pt; color: black;")
             self.SkinRedness_label.setObjectName("SkinRedness_label")
             self.SkinRedness_label.show()
         else:
@@ -556,7 +556,7 @@ class Ui_MainWindow(object):
         if self.Breath_Shortness.isChecked():
             self.Breath_Shortness_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Breath_Shortness_label.setText("Based on your Breath Shortness symptom \nWe have some suggestions for you\n Breathing through the nose.\n Taking a walk.\nMustard seeds are one of the herbal solutions recommended by nutritionists against shortness of breath.")
-            self.Breath_Shortness_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Breath_Shortness_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Breath_Shortness_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Breath_Shortness_label.setObjectName("Breath_Shortness_label")
             self.Breath_Shortness_label.show()
@@ -568,7 +568,7 @@ class Ui_MainWindow(object):
         if self.Nose_Flow.isChecked():
             self.Nose_Flow_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Nose_Flow_label.setText("Based on your Nose Flow symptom \nWe have some suggestions for you\n Drinking plenty of fluids.\n Applying a warm damp cloth around the face and nose.\n Take a hot shower and breathe in the steam.")
-            self.Nose_Flow_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Nose_Flow_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Nose_Flow_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Nose_Flow_label.setObjectName("Nose_Flow_label")
             self.Nose_Flow_label.show()
@@ -580,7 +580,7 @@ class Ui_MainWindow(object):
         if self.Fever.isChecked():
             self.Fever_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Fever_label.setText("Based on your Fever symptom \nWe have some suggestions for you\n Wear Wet Socks.\n Take a Warm Shower.\n Drink Plenty of Water.\n Apply a Cold Compress with a Wet Cloth.")
-            self.Fever_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Fever_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Fever_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Fever_label.setObjectName("Fever_label")
             self.Fever_label.show()
@@ -593,7 +593,7 @@ class Ui_MainWindow(object):
         if self.Cough.isChecked():
             self.Cough_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Cough_label.setText("Based on your Cough symptom \nWe have some suggestions for you\nDrinking plenty of fluids: It is important to drink enough water to prevent the throat from drying out due to cough and to help dilute phlegm. You can also consume liquids such as herbal teas, fresh fruit juices and soup. \n Honey and Lemon: Honey is known as a natural cough suppressant. Drinking a glass of warm water with a teaspoon of honey and some lemon can be good for severe cough. \n Cough Syrups: If the cough is severe, you can use cough syrups recommended by your doctor.")
-            self.Cough_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Cough_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Cough_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Cough_label.setObjectName("Cough_label")
             self.Cough_label.show()
@@ -605,7 +605,7 @@ class Ui_MainWindow(object):
         if self.Vomiting.isChecked():
             self.Vomiting_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Vomiting_label.setText("Based on your Vomiting symptom \nWe have some suggestions for you\n try deep breathing \n Eat less salty crackers \nginger When you feel nauseated, you can try sipping a glass of hot ginger tea.")
-            self.Vomiting_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Vomiting_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Vomiting_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Vomiting_label.setObjectName("Vomiting_label")
             self.Vomiting_label.show()
@@ -617,7 +617,7 @@ class Ui_MainWindow(object):
         if self.Sore_Throat.isChecked():
             self.Sore_Throat_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Sore_Throat_label.setText("Based on your Sore Thorat symptom \nWe have some suggestions for you\n Ice application: Sucking on an ice cube or ice cream can help relieve a sore throat. \n Using steaming devices: The humidity of the environment is very important, especially during night sleep. The humidity level of the environment can be increased and sore throat can be improved with various humidifying devices. \n Consumption of warm liquid: It is of great importance to keep the throat constantly moist in order to prevent throat irritation or to prevent the progression of existing irritation.")
-            self.Sore_Throat_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Sore_Throat_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Sore_Throat_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Sore_Throat_label.setObjectName("Sore_Throat_label")
             self.Sore_Throat_label.show()
@@ -629,7 +629,7 @@ class Ui_MainWindow(object):
         if self.Insomnia.isChecked():
             self.Insomnia_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Insomnia_label.setText("Based on your Insomnia symptom \nWe have some suggestions for you\n Electronic devices such as televisions, mobile phones and computers should not be in the bedroom. Even spending time with these devices in bed can disrupt sleep quality. \n A night lamp should not be used while sleeping. Melatonin hormone, which is secreted during sleep, is activated only in the dark. \n If you cannot sleep for half an hour and 45 minutes despite going to bed, you should get out of bed. Reading a book in a different room and going to bed again gives positive results.")
-            self.Insomnia_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Insomnia_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Insomnia_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Insomnia_label.setObjectName("Insomnia_label")
             self.Insomnia_label.show()
@@ -642,7 +642,7 @@ class Ui_MainWindow(object):
         if self.Acne.isChecked():
             self.Acne_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Acne_label.setText("Based on your Acne symptom \nWe have some suggestions for you\n try deep breathing \n Mix mineral water and apple cider vinegar and apply once a day with a cotton ball until the swelling of the acne goes down. \n Add the lavender to the boiling water on the stove and let it steep on low heat for 5 minutes.")
-            self.Acne_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Acne_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Acne_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Acne_label.setObjectName("Acne_label")
             self.Acne_label.show()
@@ -654,7 +654,7 @@ class Ui_MainWindow(object):
         if self.Nose_Bleed.isChecked():
             self.Nose_Bleed_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Nose_Bleed_label.setText("Based on your Nose Bleed symptom \nWe have some suggestions for you\n Putting Ice pack on your nose. \n Both wings of the nose should be pressed for 3-4 minutes without applying too much force.")
-            self.Nose_Bleed_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Nose_Bleed_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Nose_Bleed_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Nose_Bleed_label.setObjectName("Nose_Bleed_label")
             self.Nose_Bleed_label.show()
@@ -665,7 +665,7 @@ class Ui_MainWindow(object):
         if self.Diarrhea.isChecked():
             self.Diarrhea_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Diarrhea_label.setText("Based on your Diarrhea symptom \nWe have some suggestions for you\n You may eat: Apple, Carrot, Banana, Boiled Patato, Yogurt, Porridge Of Rice, Roasted Chickpea \n 1 tablespoon of sugar, 1 teaspoon salt, Add 1 teaspoon of baking soda. This prepared mixture is consumed frequently. ")
-            self.Diarrhea_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Diarrhea_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Diarrhea_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Diarrhea_label.setObjectName("Diarrhea_label")
             self.Diarrhea_label.show()
@@ -677,7 +677,7 @@ class Ui_MainWindow(object):
         if self.Costiveness.isChecked():
             self.Costiveness_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Costiveness_label.setText("Based on your Costiveness symptom \nWe have some suggestions for you\n Increasing fluid intake during the day. \n Drinking water before breakfast and meeting the body's water needs by drinking water every few hours during the day.\n Consuming fibrous foods such as dried or fresh figs, apricots, dates and plums. ")
-            self.Costiveness_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Costiveness_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Costiveness_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Costiveness_label.setObjectName("Costiveness_label")
             self.Costiveness_label.show()
@@ -688,7 +688,7 @@ class Ui_MainWindow(object):
         if self.Phlegm.isChecked():
             self.Phlegm_label.setGeometry(QtCore.QRect(200, 200, 400, 100))
             self.Phlegm_label.setText("Based on your Phlegm symptom \nWe have some suggestions for you\n You can help soften and remove solidified phlegm by drinking plenty of water. \n You can inhale the steam for 5-10 minutes while taking a shower with hot water.\n   You can take deep breaths by dropping peppermint or eucalyptus oil into a bowl of hot water.")
-            self.Phlegm_label.setStyleSheet("font-size: 24pt; color: black;")
+            self.Phlegm_label.setStyleSheet("font-size: 18pt; color: black;")
             self.Phlegm_label.setAlignment(QtCore.Qt.AlignCenter)
             self.Phlegm_label.setObjectName("Phlegm_label")
             self.Phlegm_label.show()
