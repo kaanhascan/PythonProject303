@@ -1,5 +1,4 @@
 
-
 from PyQt5 import QtWidgets, QtCore, QtGui
 from healthcare import Ui_MainWindow
 import csv
@@ -31,7 +30,7 @@ class CombinedButtonClicked(QtWidgets.QPushButton):
         with open('records.csv', mode='a', newline='') as file:
             writer = csv.writer(file)
 
-            row = [name, surname, tc, age] + symptoms
+            row = [name, surname, tc, age, symptoms]
 
             writer.writerow(row)
 
@@ -62,27 +61,6 @@ class CombinedButtonClicked(QtWidgets.QPushButton):
             if checkbox.isChecked():
                 checked_boxes.append(checkbox.objectName())
 
+        print("Checked Boxes:", checked_boxes)
+
         return checked_boxes
-
-    def display_suggestions(self):
-
-        checked_boxes = self.get_selected_symptoms()
-
-        suggestions_texts = {
-            'Headache': "Drink some water"
-        }
-
-        for i in reversed(range(self.suggestions.layout.count())):
-            remove = self.suggestions.layout.itemAt(i).widget()
-            self.suggestions_layout.removeWidget(remove)
-            remove.setParent(None)
-
-        for symptoms in checked_boxes:
-            suggestion_label = QtWidgets.QLabel(self.main_window.suggestions)
-            suggestion_label.setText(
-                f"Based on your {symptoms} we have some suggestions for you \n {suggestions_texts[symptoms]}")
-            self.main_window.suggestions_layout.addWidget(suggestion_label)
-
-        self.main_window.stackedWidget.setCurrentIndex(2)
-
-
