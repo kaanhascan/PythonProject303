@@ -20,10 +20,10 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName("centralwidget")
         self.stackedWidget = QtWidgets.QStackedWidget(self.centralwidget)
         self.stackedWidget.setGeometry(QtCore.QRect(-20, -60, 1541, 1290))
-        self.stackedWidget.setStyleSheet("background-color: rgb(0, 150, 255);")
+        self.stackedWidget.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.stackedWidget.setObjectName("stackedWidget")
         self.homepage = QtWidgets.QWidget()
-        self.homepage.setStyleSheet("background-color: rgb(0, 253, 255);")
+        self.homepage.setStyleSheet("background-color: rgb(145, 145, 145);")
         self.homepage.setObjectName("homepage")
         self.health_care = QtWidgets.QLabel(self.homepage)
         self.health_care.setGeometry(QtCore.QRect(470, 50, 471, 81))
@@ -93,6 +93,7 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.homepage)
         self.symptoms = QtWidgets.QWidget()
         self.symptoms.setObjectName("symptoms")
+        self.symptoms.setStyleSheet("background-color:rgb(145, 145, 145);")
 
         self.Headache = QtWidgets.QCheckBox(self.symptoms)
         self.Headache.setGeometry(QtCore.QRect(30, 70, 181, 31))
@@ -246,20 +247,33 @@ class Ui_MainWindow(object):
 
         self.suggest_button = QtWidgets.QPushButton(self.symptoms)
         self.suggest_button.setGeometry(QtCore.QRect(660, 700, 130, 26))
-        self.suggest_button.setStyleSheet("background-color: rgb(0, 249, 0);\n"
+        self.suggest_button.setStyleSheet("background-color: rgb(224, 224, 224);\n"
                                           "font: 24pt \"Avenir\";")
         self.suggest_button.setObjectName("suggest_button")
         self.suggest_button.clicked.connect(self.show_suggestion)
 
         self.stackedWidget.addWidget(self.symptoms)
+
+
         self.suggestions = QtWidgets.QWidget()
         self.suggestions.setObjectName("suggestions")
+
         self.verticalLayoutWidget = QtWidgets.QWidget(self.suggestions)
-        self.verticalLayoutWidget.setGeometry(QtCore.QRect(20, 60, 1511, 901))
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(0, 0, 1514, 899))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout.setObjectName("verticalLayout")
+
+        scroll_area = QtWidgets.QScrollArea(self.suggestions)
+        scroll_area.setGeometry(QtCore.QRect(0, 0, 1514, 899))
+        scroll_area.setWidgetResizable(True)
+
+        scroll_area.setWidget(self.verticalLayoutWidget)
+        scroll_area.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+
+        suggestions_layout = QtWidgets.QVBoxLayout(self.suggestions)
+        suggestions_layout.addWidget(scroll_area)
         self.Headache_label = QtWidgets.QLabel(self.verticalLayoutWidget)
         self.Headache_label.setObjectName("Headache_label")
         self.verticalLayout.addWidget(self.Headache_label)
@@ -336,7 +350,11 @@ class Ui_MainWindow(object):
         self.Nausea_label.setObjectName("Nausea_label")
         self.verticalLayout.addWidget(self.Nausea_label)
         self.stackedWidget.addWidget(self.suggestions)
+        self.stackedWidget.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
         main_window.setCentralWidget(self.centralwidget)
+        main_window.resizeEvent = self.resizePage
+
+
 
         self.retranslateUi(main_window)
         self.stackedWidget.setCurrentIndex(0)
@@ -402,6 +420,11 @@ class Ui_MainWindow(object):
         self.ToothPain_label.setText(_translate("MainWindow", "TextLabel"))
         self.Burn_label.setText(_translate("MainWindow", "TextLabel"))
         self.Nausea_label.setText(_translate("MainWindow", "TextLabel"))
+
+    def resizePage(self, event):
+        # Full screen mode: Update the size of the suggestions widget
+        if self.stackedWidget.currentWidget() == self.suggestions:
+            self.stackedWidget.setFixedSize(event.size())
 
     def show_suggestion(self):
 
@@ -546,7 +569,7 @@ class Ui_MainWindow(object):
             self.HairLoss_label.setText(
                 "Based on your Hair Loss symptom \nWe have some suggestions for you\n The nutrition of hair follicles occurs with nutrients carried to the cells through circulation. Therefore, it is very important to get enough vitamins A, B, C, D and E through a balanced diet.\n For a strong hair profile, it is recommended to avoid washing with hot water. Washing with warm water is supportive in preventing excessive hair loss as it does not damage the sebum layer on the scalp.\n Controlling stress and anxiety through relaxing sports activities such as yoga and meditation can prevent excessive hair loss.")
             self.HairLoss_label.setAlignment(QtCore.Qt.AlignCenter)
-            self.HairLoss_label.setStyleSheet("font-size: 18pt; color: black;")
+            self.HairLoss_label.setStyleSheet("font-size: 18pt; color: white;")
             self.HairLoss_label.setObjectName("HairLoss_label")
             self.HairLoss_label.show()
             checked_symptoms.append(self.HairLoss.objectName())

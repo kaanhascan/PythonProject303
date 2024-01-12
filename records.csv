@@ -7,3 +7,105 @@ Symptoms of the patient:,Headache
 "Name,Surname,TC,Age"
 asd,asd,asd,asd
 Symptoms of the patient:,Stomach_Ache
+"Name,Surname,TC,Age"
+Kaan ,Hascan,12345678910,20
+Symptoms of the patient:,Headache,Vomiting,Costiveness,Phlegm
+"Name,Surname,TC,Age"
+Arda,Yazici,112004995092556,20
+Symptoms of the patient:,Headache,Nausea,Dizziness
+"Name,Surname,TC,Age"
+adnan,zirbo,2132142421,20
+Symptoms of the patient:,Headache,Cut,Sore_Throat,Costiveness
+"Name,Surname,TC,Age"
+yusuf,yalcin321,21321421421,21
+Symptoms of the patient:,Headache,SkinRedness,Insomnia
+"Name,Surname,TC,Age"
+KAAN,hsacan,123213124,21
+"Name,Surname,TC,Age"
+ali cihan,keles,1111111110,33
+Symptoms of the patient:,Headache,Stomach_Ache,Fever
+"Name,Surname,TC,Age"
+asda,asd,asd,asd
+Symptoms of the patient:,ToothPain,SkinRedness,Breath_Shortness,Cough,Vomiting,Sore_Throat,Acne
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Bruise_on_Body,Cut,HairLoss,Nose_Flow,Fever,Cough,Vomiting,Sore_Throat,Diarrhea,Costiveness
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Cut,ToothPain,HairLoss,Cough,Vomiting,Sore_Throat,Costiveness
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,HairLoss,SkinRedness,Nose_Flow,Fever,Cough,Vomiting,Sore_Throat,Diarrhea,Costiveness
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Bruise_on_Body,Cut,ToothPain,Cough,Vomiting,Insomnia,Costiveness,Phlegm
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,SkinRedness,Breath_Shortness,Nose_Flow,Fever,Cough,Vomiting,Sore_Throat,Insomnia,Acne,Nose_Bleed,Costiveness
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Cut,ToothPain,HairLoss,SkinRedness,Nose_Flow,Fever,Cough,Vomiting,Sore_Throat,Insomnia,Nose_Bleed,Diarrhea,Costiveness
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Cut,ToothPain,HairLoss,SkinRedness,Nose_Flow,Fever,Cough,Vomiting,Sore_Throat,Insomnia,Acne,Nose_Bleed,Diarrhea,Costiveness
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Cut,ToothPain,HairLoss,SkinRedness,Nose_Flow,Fever,Cough,Vomiting,Insomnia,Acne,Nose_Bleed,Diarrhea,Costiveness
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Bruise_on_Body,Cut,ToothPain,HairLoss,SkinRedness,Breath_Shortness,Nose_Flow,Fever,Cough,Vomiting,Sore_Throat,Diarrhea,Costiveness,Phlegm
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Fever,Cough,Vomiting,Sore_Throat,Insomnia,Acne,Nose_Bleed,Costiveness
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Bruise_on_Body,ToothPain,HairLoss,Nose_Flow,Fever,Cough,Vomiting,Sore_Throat,Insomnia,Nose_Bleed,Diarrhea,Costiveness
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Bruise_on_Body,Cut,ToothPain,HairLoss,SkinRedness,Breath_Shortness,Nose_Flow,Fever,Cough,Sore_Throat
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Cut,ToothPain,HairLoss,SkinRedness,Breath_Shortness,Nose_Flow,Fever,Cough,Sore_Throat
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Headache,Dizziness,Joint_Pain,Burn,Ear_Ache,Bruise_on_Body,Cut,ToothPain,HairLoss
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Cut,ToothPain,HairLoss,SkinRedness,Nose_Flow,Fever,Cough,Vomiting,Sore_Throat,Insomnia,Acne,Diarrhea,Costiveness
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,ToothPain,SkinRedness,Breath_Shortness,Nose_Flow,Fever,Cough,Sore_Throat,Insomnia,Acne,Nose_Bleed,Diarrhea
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Fever,Cough,Vomiting,Sore_Throat,Insomnia,Acne,Diarrhea,Costiveness
+"Name,Surname,TC,Age"
+,,,
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Cut,ToothPain,HairLoss,SkinRedness,Vomiting,Sore_Throat,Insomnia,Costiveness,Phlegm
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Cut,ToothPain,HairLoss,SkinRedness,Cough,Vomiting,Sore_Throat,Insomnia
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Cut,ToothPain,HairLoss,SkinRedness,Vomiting,Sore_Throat,Insomnia,Costiveness
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Bruise_on_Body,Cut,ToothPain,HairLoss,SkinRedness,Breath_Shortness,Nose_Flow,Cough,Vomiting,Sore_Throat,Insomnia,Acne
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,Bruise_on_Body,Cut,ToothPain,HairLoss,SkinRedness,Cough,Sore_Throat,Insomnia,Acne,Nose_Bleed,Diarrhea,Costiveness,Phlegm
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,HairLoss,SkinRedness
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,ToothPain,HairLoss,Breath_Shortness,Nose_Flow,Fever,Vomiting,Sore_Throat,Insomnia,Acne
+"Name,Surname,TC,Age"
+,,,
+"Name,Surname,TC,Age"
+,,,
+Symptoms of the patient:,SkinRedness,Breath_Shortness,Nose_Flow,Fever,Cough,Vomiting,Sore_Throat,Insomnia,Acne,Costiveness

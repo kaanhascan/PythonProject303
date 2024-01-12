@@ -9,7 +9,7 @@ class CombinedButtonClicked(QtWidgets.QPushButton):
 
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.setStyleSheet("background-color: rgb(0, 249, 0);\n"
+        self.setStyleSheet("background-color: rgb(224, 224, 224);\n"
                            "font: 57 24pt \"Avenir\";")
         self.setText("SUBMIT")
 
