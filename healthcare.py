@@ -569,7 +569,7 @@ class Ui_MainWindow(object):
             self.HairLoss_label.setText(
                 "Based on your Hair Loss symptom \nWe have some suggestions for you\n The nutrition of hair follicles occurs with nutrients carried to the cells through circulation. Therefore, it is very important to get enough vitamins A, B, C, D and E through a balanced diet.\n For a strong hair profile, it is recommended to avoid washing with hot water. Washing with warm water is supportive in preventing excessive hair loss as it does not damage the sebum layer on the scalp.\n Controlling stress and anxiety through relaxing sports activities such as yoga and meditation can prevent excessive hair loss.")
             self.HairLoss_label.setAlignment(QtCore.Qt.AlignCenter)
-            self.HairLoss_label.setStyleSheet("font-size: 18pt; color: white;")
+            self.HairLoss_label.setStyleSheet("font-size: 18pt; color: black;")
             self.HairLoss_label.setObjectName("HairLoss_label")
             self.HairLoss_label.show()
             checked_symptoms.append(self.HairLoss.objectName())

@@ -1,12 +1,27 @@
-"['Name,Surname,TC,AGE']"
-Kaan,Hascan,12,12
-Symptoms of the patient:,Headache
-"Name,Surname,TC,AGE"
-asdas,asdas,asdas,asdas
-Symptoms of the patient:,Headache
 "Name,Surname,TC,Age"
-asd,asd,asd,asd
-Symptoms of the patient:,Stomach_Ache
+a,v,1,2
+Symptoms of the patient:,ToothPain
+"Name,Surname,TC,Age"
+jj,kk,123,21
+Symptoms of the patient:,SkinRedness
+"Name,Surname,TC,Age"
+kaan,h,123,21
+Symptoms of the patient:,SkinRedness
+"Name,Surname,TC,Age"
+alper,kaan,123,21
+Symptoms of the patient:,Insomnia
+"Name,Surname,TC,Age"
+aaaa,bbb,1234,34
+Symptoms of the patient:,Breath_Shortness
+"Name,Surname,TC,Age"
+alper,y,2111,12
+Symptoms of the patient:,Phlegm
+"Name,Surname,TC,Age"
+alper,yiğit,12345,21344
+Symptoms of the patient:,Stomach_Ache,HairLoss,SkinRedness,Cough,Costiveness
+"Name,Surname,TC,Age"
+emirhan,h,1234,21
+Symptoms of the patient:,Joint_Pain,Burn,Cut,SkinRedness
 "Name,Surname,TC,Age"
 Kaan ,Hascan,12345678910,20
 Symptoms of the patient:,Headache,Vomiting,Costiveness,Phlegm
@@ -109,3 +124,6 @@ Symptoms of the patient:,ToothPain,HairLoss,Breath_Shortness,Nose_Flow,Fever,Vom
 "Name,Surname,TC,Age"
 ,,,
 Symptoms of the patient:,SkinRedness,Breath_Shortness,Nose_Flow,Fever,Cough,Vomiting,Sore_Throat,Insomnia,Acne,Costiveness
+"Name,Surname,TC,Age"
+alper,yiğit,6666,77777
+Symptoms of the patient:,Dizziness,Ear_Ache,HairLoss,Sore_Throat
